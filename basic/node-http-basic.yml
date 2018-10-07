@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: app
+  labels:
+    name: node-http-basic
+spec:
+  containers:
+  - name: basic
+    image: tzoght/node-http-basic
+    ports:
+      - containerPort: 8989
