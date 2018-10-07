@@ -56,15 +56,10 @@ Then
 kubectl get service && oepn http://localhost:8989
 ```
 
-
-## To verify the service is up
-kubectl get service
-## To access the pod
-curl -X GET http://localhost:8989
-## Scaling up
-kubectl get replicationcontrollers
-
-kubectl scale rc zoght --replicas=3
+## To delete the pod
+```
+kubectl delete po app
+```
 
 
 
